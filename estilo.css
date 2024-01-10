@@ -1,0 +1,95 @@
+:root{
+    --tamanho-fonte:1.4rem;
+    --cor-fonte: #fff;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*o justify-content sempre alinha de acordo com o flex-direction(alinha no eixo que esta direcionado*/
+    align-items: center;
+    height: 100vh; /*irá ocupar toda a view port do navegador*/
+
+    background: #283c86; 
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  
+    background: linear-gradient(to right, #45a247, #283c86);
+    color: var(--cor-fonte);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    margin: 0px;
+}
+
+.subtitulo{
+    font-size: 1rem;
+    margin: 0px;
+    color: #fffa;
+}
+
+.seletores{
+    min-width: 25%;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--tamanho-fonte);
+}
+
+.seletores > label{ /* o simbolo ">" diz ao CSS que ele deve aplicar a formatação para todos o filhos diretos, pois som co " " ele irá aplicar para todas a labels dentro de seletores*/
+    line-height: 55px;
+    vertical-align: middle; 
+}
+
+.entrada{
+    outline: none;
+    padding: 5px 10px;
+    margin: 10px 20px;
+    font-size: var(--tamanho-fonte);
+    color: var(--cor-fonte);
+    border-radius: 5px;
+    border: solid 1px #0009;
+    background-color: #0005;
+    text-align: center;
+}
+
+#numero{
+    width: 100px;
+
+}
+
+#botao{
+    background-color: #e82828;
+    margin-top: 10px 35px;
+    border-radius: 200px;
+    border: 2px solid #a01c13;
+    color: var(--cor-fonte);
+    font-size: var(--tamanho-fonte);
+}
+
+#botao:hover{
+    background-color: #d31414;
+}
+
+#resultado{
+    font-size: var(--tamanho-fonte);
+    margin: 30px 0px;
+    padding: 15px 30px;
+    border: solid 1px #0009;
+    background-color: #0005;
+    border-radius: 15px;
+}
+
+#resultado > sub{
+    margin-left: 5px;
+}
+
+.invisivel{
+    display: none;
+}
